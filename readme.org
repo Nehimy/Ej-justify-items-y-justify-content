@@ -1,0 +1,110 @@
+
+*  [#A] ¿Cuál es la diferencia entre justify-items y justify-content?
+
+[[https://i.imgur.com/ak3WDGP.png]]
+
+Mientras que justify-items alinea el elemento solo en el eje horizontal de la celda o casilla, justify-content los alinea a lo largo de todo el contenedor padre.
+
+
+* Definición de estas propiedades:
+** justify-items:
+
+justify-items es una propiedad que alinea el elemento en el eje x o lado horizontal de la celda.
+
+** justify-content:
+
+justify-content es una propiedad que aliea u ordena todos los elementos en el eje horizontal del contenedor padre.
+
+Bien para que esto quede claro veremos algunos ejemplos a continuación.
+
+* Ejemplos de justify-items
+
+** Ej. 01 justify-items: center
+En el lado horizontal de la casilla queda centrado el elemento.
+
+#+begin_src css
+.container-01.center {
+  justify-items: center;
+}
+#+end_src
+** Ej. 02 justify-items:start
+Alinea el elemento al lado izquierdo (o al inicio) de sus respectiva celda o casilla en el eje x.
+
+
+#+begin_src css
+.container-01.start {
+  justify-items: start;
+}
+#+end_src
+
+** Ej. 03 justify-items:end
+Alinea el elemento en el lado derecho (o al final) de su respectiva celda  en el eje horizontal (eje "x").
+
+
+#+begin_src css
+.container-01.end {
+  justify-items: end;
+}
+
+#+end_src
+* Ejemplos de justify-content
+
+** Ej. 01 justify-content:center
+Centra los elementos según el eje  horizontal del contenedor padre.
+
+
+#+begin_src css
+.container-02.center {
+  justify-content: center;
+}
+#+end_src
+
+** Ej. 02 justify-content:start
+Alinea el contenido al principio del contenedor padre, este alineamiento solo se efectúa en el lado horizontal.
+
+#+begin_src css
+.container-02.start {
+  justify-content: start;
+}
+#+end_src
+
+** Ej. 03 justify-content:end
+Mueve todos los elementos del contenedor padre al final en el lado derecho del eje "x".
+
+img.003
+#+begin_src css
+.container-02.end {
+  justify-content: end;
+}
+#+end_src
+
+** Ej. 04 justify-content:space-between
+Separa los elementos de forma uniforme y además el primer elemento va al princio mientras que el último elemento va al final.
+
+#+begin_src css
+.container-02.space-between {
+  justify-content: space-between;
+}
+#+end_src
+
+** Ej. 05 justify-content: space-around
+Distribuye los elementos de forma uniforme, ademas los espacios del principio y del final tienen  la mitad del tamaño
+respecto al tamaño del espacio entre los elementos.
+
+  Dicho de otra forma: Los espacios iniciales y finales son la mitad del tamaño del espacio entre cada elemento.
+
+#+begin_src css
+.container-02.space-around {
+  justify-content: space-around;
+}
+#+end_src
+
+** Ej. 06  justify-content:space-evenly
+
+Separa los elementos de forma uniforme, osea todos los espacios tienen el mismo tamaño.
+
+#+begin_src css
+.container-02.space-evenly {
+  justify-content: space-evenly;
+}
+  #+end_src

@@ -3,9 +3,105 @@
    del cálculo del ancho de la caja.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=REM:wght@500&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+
+body {
+    font-family: 'ADLaM Display', cursive;
+    color: #7b56ff;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
+
+h1, .container-01, .container-02 {
+    margin: 10px;
+}
+
+h2 {
+    color: #a187fd;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 80px;
+
+}
+
+/*justify-items*/
+
+.container-01 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2,auto);
+    border: #2cd9c0 5px solid;
+    width: 500px;
+    height: 400px;
+}
+
+.container-01.center {
+    justify-items: center;
+}
+
+.container-01.start {
+    justify-items: start;
+}
+
+.container-01.end {
+    justify-items: end;
+}
+
+/*justify-content*/
+
+.container-02 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2,auto);
+    border: #2cd9c0 5px solid;
+    width: 500px;
+    height: 400px;
+}
+
+.container-02.center {
+    justify-content: center;
+}
+
+.container-02.start {
+    justify-content: start;
+}
+
+.container-02.end {
+    justify-content: end;
+}
+
+.container-02.space-between {
+    justify-content: space-between;
+}
+
+/* Distribuya los artículos uniformemente
+   El primer elemento está al ras con el inicio,
+   el último está al ras del final
+*/
+
+.container-02.space-around {
+    justify-content: space-around;
+}
+
+/*
+ * Los espacios iniciales y finales son la mitad del tamaño del espacio.
+ */
+
+.container-02.space-evenly {
+    justify-content: space-evenly;
+}
+
+/*
+ * Los espacios iniciales, intermedios y finales tienen el mismo tamaño.
+ */
