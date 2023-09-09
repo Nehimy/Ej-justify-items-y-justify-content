@@ -22,6 +22,8 @@ Bien para que esto quede claro veremos algunos ejemplos a continuación.
 ** Ej. 01 justify-items: center
 En el lado horizontal de la casilla queda centrado el elemento.
 
+[[https://ney.one/wp-content/uploads/2023/09/Captura-desde-2023-09-07-15-36-52.png]]
+
 #+begin_src css
 .container-01.center {
   justify-items: center;
