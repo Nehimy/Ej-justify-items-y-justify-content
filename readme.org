@@ -1,5 +1,5 @@
 
-*  [#A] ¿Cuál es la diferencia entre justify-items y justify-content?
+*  ¿Cuál es la diferencia entre justify-items y justify-content?
 
 [[https://i.imgur.com/ak3WDGP.png]]
 
